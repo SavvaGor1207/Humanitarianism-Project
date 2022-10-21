@@ -2,3 +2,4 @@
 //Thats good make sure you take your daily medication?
 //Remember that your staying with your children.
 //
+a = input("How was your day?")
