@@ -1,1 +1,63 @@
+#memory board for elderly/disabled people, good for people with dementia
+import random
 
+print("Daily Memory Board Schedule Survey")
+#create text to speach mode that will read every line
+
+#print("Rise with the Sun")
+
+print("Please answer \"Yes\" or \"No\" for the following question\n(ex: \"Yes\")")
+meds = input("Do you take medication?: ")
+if meds == "yes":
+    medsdose = int(input("How many times a day do you take medication?: "))
+elif meds == "no":
+    print("Next")
+else:
+    print("Please type \"Yes\" or \"No\"")
+   
+supp = input("Do you take supplements? Please enter \"yes\" or \"no\" \n(ex: tumeric, magnesium, iron): ")
+if supp == "yes":
+    specisupp = input("Which one?: ")
+   
+#elif supp == "no":  
+#suppdose = int(input("How many times a day do you take supplements?: "))
+if supp == "yes":
+    suppdose = int(input("How many times a day do you take supplements?: "))
+print("Thank you!\n")
+print("Say hello to your Daily Memory Board")
+print("This board shows your daily schedule starting from the time \nyou wake up")
+print("You are in the United States living with your daughter, granddaughter, \ngrandson, and son in law.")
+print("Your granddaughter's name is Allison, your grandson's name is Derek.")
+print("Rise with the Sun")
+#breakfast
+print("Good Morning! It's time to get up and eat something healthy \nfor breakfast")
+if meds == "yes":
+    print("Make sure during breakfast to consume your daily intake of \n" + str(medsdose) + " doses of medication to stay healthy!" )
+if supp == "yes":
+    print("Throughout the day during mealtime consume your daily intake of \n" + str(suppdose) + " " + specisupp + " doses of supplements to stay healthy!" )
+if meds == "yes":
+    breakf = input("Hello! Did you eat breakfast and take your medication?: ")
+if meds == "no":
+    breakf = input("Hello! Did you eat breakfast?: ")
+#activity
+activity = random.choice(["knit something!","crochet something!", "write in a diary", "read a book", "watch TV", "fold laundry", "make the bed"])
+if breakf == "yes":
+    print("You've made a wonderful start to a great day! \nIts now time to " + activity)
+#else:
+#    if meds == "yes":
+#    input("Hello! Did you eat breakfast and take your medication?: ")
+#    if meds == "no":
+#    print("Make sure you eat breakfast and take your medication")
+   
+activ = input("Hello! I hope your activity was enjoyable! What activity \ndid you do?: ")
+print("Sounds like fun!")
+print("Now it's time to have lunch")
+if supp == "yes":
+    suppnum = int(input("How many supplements have you taken today?: "))
+if int(suppnum - suppnum) == 0:
+    print("Great! You have taken all your supplements today, keeping you\n healthy and content.")
+if int(suppnum - suppdose) != 0:
+    print("You still must take" + (suppnum))
+print("It's been a long day! It's finally time to go to sleep, brush teeth,\n get into bed, and goodnight!")
+
+    
