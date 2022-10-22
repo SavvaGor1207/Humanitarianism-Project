@@ -1,10 +1,211 @@
-Variable = int(input("What time is it? ")
-if variable == ("")
-print("OK")
+from tkinter import *
+import random
+
+root = Tk()
+root.title("Abode Aid")
+
+BG_GRAY = "#200d75"
+BG_COLOR = "#ffffff"
+TEXT_COLOR = "#200d75"
+ 
+FONT = "Arial 18"
+FONT_BOLD = "Arial 16 bold"
+
+Jokes = random.choice(["Why aren’t koalas actual bears?\nBot -> They don’t meet the koalafications.", "What do Alexander the Great and Winnie the Pooh have in common?\nBot -> They have the same middle name.", "What do you call bears with no ears?\nBot -> B"])
+#More questions without AI
+
+#Variable = input("Did you have a good day?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("I'm glad you had a good day.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("I'm sorry you had a bad day. I hope it gets better.")
+#Variable = input("Did you eat breakfast today?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Good, starting your day off with a meal is important.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("You should eat breakfast. It is one of the most important meals.")
+#Variable = input("Is your family doing well")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Glad they are doing well.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("I'm sorry to hear that. I hope it gets better.")
+#Variable = input("Did you take your daily medication?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Good")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("You should")
+#Variable = input("Did you eat lunch?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Im glad you did. It's one of the three important meals.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("You should eat lunch, it's an important meal.")
+#Variable = input("Did you eat dinner?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("That's good. Make sure it was well balanced.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("You should eat dinner, it is one of the three important meals.")
+#Variable = input("Did you watch TV today?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Thats good, what show did you watch.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Did you do something else instead?")
+#Variable = input("Did you spend time with family today?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("Sounds good, how was it.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Why not? Spending time with family can make great memories.")
+#Variable = input("Have you read today?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("That's good, how long?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Why not? It's good to get at least 10 minutes of reading a day.")
+#Variable = input("Did you play any games?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("What games? I hope you won!")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Why not? Games are an enjoyable way to have fun and pass time.")
+#Variable = input("Do you have a pet?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("What type of animal?! I love cats and dogs.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Pets are amazing creatures you can bond with.")
+#Variable = input("Do you have children")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("How old are they")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Did you not want any?")
+#Variable = input("Do you have a middle name?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("What is it?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("About 80% of the world has one. ")
+#Variable  = input("Do you have a significant other")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("I'm happy for you, do you enjoy their company.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Did you have one before?")
+#Variable = input("Do you have grandchildren?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("How much!? I hear having grandchildren is amazing.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("I hope you get the chance to get some one day.")
+#Variable = input("Do you have a hidden talent?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("What talent!? People with hidden talents are always interesting.")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Awww, it's okay many people don't.")
+#Variable = input("Are you a movie fan?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("What's your favorite genre?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Why not? There are a lot of entertaining movies.")
+#Variable = input("Do you have a job?")
+#if Variable == input"Yes":
+    #txt.insert(END, "\n" + "Bot ->("What's your job?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Are you retired?")
+#Variable = input("Do you drive")
+#if Variable == input"Yes":
+    #txt.insert(END, "\n" + "Bot ->("what car do you drive?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("When did you stop driving?")
+#Variable + input("Did you go to college?")
+#if Variable == "Yes":
+    #txt.insert(END, "\n" + "Bot ->("what did you study?")
+#elif Variable == "No":
+    #txt.insert(END, "\n" + "Bot ->("Did you choose not to go or you couldn't?")
+ 
+def send():
+    send = "You -> " + e.get()
+    txt.insert(END, "\n" + send)
+    
+    user = e.get()
+     #Use AI for chat box
+    if (user == "Hello" or user == "Hi" or user == "Hey"):
+        txt.insert(END, "\n" + "Bot -> Hi, how was your day?")
+ 
+    elif (user == "I had a good day." or user == "I had a great day"):
+        txt.insert(END, "\n" + "Bot -> I'm glad you had a good day.\nBot -> What time of day is it?")
+
+    elif (user == "I had a bad day."):
+        txt.insert(END, "\n" + "Bot -> I'm sorry you had a bad day. I hope it gets better.\nBot -> What time of day is it? ")
+ 
+    elif (user == "Morning"):
+        txt.insert(END, "\n" + "Bot -> Did you have breakfast")
+
+    elif (user == "Afternoon"):
+        txt.insert(END, "\n" + "Bot -> Did you have lunch?")
+
+    elif (user == "Evening"):
+        txt.insert(END, "\n" + "Bot -> Did you have dinner?")
+
+    elif (user == "No, I didn't have lunch." or user == "No, I didn't have dinner." or user == "No, I didn't have breakfast."):
+        txt.insert(END, "\n" + "Bot -> You should go eat now.")
+
+    elif (user == "Yes, I had lunch." or user == "Yes, I had dinner." or user == "Yes, I had breakfast."):
+        txt.insert(END, "\n" + "Bot -> I hope it was balanced.\nBot -> How is your family doing?")
+
+    elif (user == "They are doing well."):
+        txt.insert(END, "\n" + "Bot -> Glad they are doing well.")
+
+    elif (user == "They aren't doing well."):
+        txt.insert(END, "\n" + "Bot -> I'm sorry to hear that. I hope it gets better./nBot -> Did you take your daily medication?")
+
+    elif (user == "Yes, I did."):
+        txt.insert(END, "\n" + "Bot -> Good")
+
+    elif (user == "No, I didn't."):
+        txt.insert(END, "\n" + "Bot -> You should")
+
+    elif (user == "Play a math game"):
+        txt.insert(END, "\n" + "Bot -> Addition and Subtraction or Multiplication and Division?")
+    #Use random values instead of preset number
+    elif (user == "Addition and Subtraction"):
+        txt.insert(END, "\n" + "Bot -> What is 27+48?\n What is 56-39?\n What is 386+48?")
+
+    elif (user == "How are you"):
+        txt.insert(END, "\n" + "Bot -> Fine! and you?")
+ 
+    elif (user == "Fine" or user == "I am good" or user == "I am doing good"):
+        txt.insert(END, "\n" + "Bot -> Great! how can I help you.")
+ 
+    elif (user == "Thanks" or user == "Thank you" or user == "Thank You very much"):
+        txt.insert(END, "\n" + "Bot -> My pleasure!")
+ 
+    elif (user == "Tell me a joke" or user == "Tell me something funny" or user == "Crack a funny line"):
+        txt.insert(
+            END, "\n" + "Bot -> " + Jokes)
+ 
+    elif (user == "Goodbye" or user == "See you later" or user == "Bye"):
+        txt.insert(END, "\n" + "Bot -> Have a nice day!")
+
+    elif (user == "I need Help" or user == "Help me" or user == "Bye"):
+        txt.insert(END, "\n" + "I can tell you a joke, talk to you, or practice math with you.")
+ 
+    else:
+        txt.insert(END, "\n" + "Bot -> Sorry! I didn't understand that")
+ 
+    e.delete(0, END)
+ 
+ 
+Label1 = Label(root, bg=BG_COLOR, fg=TEXT_COLOR, text="Welcome", font=FONT_BOLD, pady=10, width=20, height=1).grid(
+    row=0)
+Label2 = Label(root, bg=BG_COLOR, fg=TEXT_COLOR, text="Send 'Hello' to start\n \n ↓Use the commands below↓\n \n 😜'Tell me a joke'😜\n \n 🎮Games🎮\n ➕'Play a math game'➖ \n 📖'Play a reading game'📖\n 📝'Play a spelling game'📝\n 🔡'Play a matching game'🔡\n 🧠'Play a logic game'🧠\n \n \n \n ", font=FONT, pady=10, width=22, height=23).grid(
+    row=1,column=2)
 
 
-//How was your day?
-//Thats good make sure you take your daily medication?
-//Remember that your staying with your children.
-//
-a = input("How was your day?")
+ 
+ 
+txt = Text(root, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT, width=60)
+txt.grid(row=1, column=0, columnspan=2)
+ 
+scrollbar = Scrollbar(txt)
+scrollbar.place(relheight=1, relx=0.974)
+ 
+e = Entry(root, bg="#ffffff", fg=TEXT_COLOR, font=FONT, width=55)
+e.grid(row=2, column=0)
+ 
+send = Button(root, text="Send", fg=BG_COLOR, font=FONT_BOLD, bg=BG_GRAY,
+              command=send).grid(row=2, column=1)
+ 
+root.mainloop()
